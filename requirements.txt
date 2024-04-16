@@ -1,0 +1,12 @@
+feedparser
+chardet
+requests
+logging
+urllib.parse
+os
+asyncio
+threading
+tkinter
+json
+configparser
+selenium

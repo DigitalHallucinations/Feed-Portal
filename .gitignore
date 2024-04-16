@@ -2,4 +2,7 @@
 *.log
 
 # Ignore .json files
-*.json
+feeds.json
+
+# Ignore all pychache folders
+__pycache__/
