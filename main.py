@@ -1,7 +1,7 @@
 import logging
 from logging.handlers import RotatingFileHandler
 import tkinter as tk
-from RSSFeedReaderUI import RSSFeedReaderUI  
+from modules.RSSFeedReaderUI import RSSFeedReaderUI  
 
 
 logger = logging.getLogger('main.py')
@@ -33,9 +33,8 @@ def adjust_logging_level(level):
     logger.setLevel(levels.get(level, logging.WARNING))
 
 
-# Main Function
 if __name__ == "__main__":
-    logger.info("Welcome to the RSS Reader!")  # Your welcome message
+    logger.info("Welcome to the RSS Reader!")  
     root = tk.Tk()
     app = RSSFeedReaderUI(root)
     root.mainloop()

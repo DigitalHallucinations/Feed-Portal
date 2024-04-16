@@ -10,3 +10,4 @@ tkinter
 json
 configparser
 selenium
+pillow

@@ -1,4 +1,4 @@
-# modules/Personas/RSSManager/Toolbox/RSS/RSSFeedReaderUI.py
+#modules/RSSFeedReaderUI.py
 
 import os
 import asyncio
@@ -10,10 +10,12 @@ import configparser
 import feedparser
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from rss_feed_reader import RSSFeedReader, RSSFeedReaderError
+from modules.rss_feed_reader import RSSFeedReader, RSSFeedReaderError
 import logging
 from logging.handlers import RotatingFileHandler
-
+from PIL import Image, ImageTk
+import ctypes
+from modules.tooltip import ToolTip
 
 logger = logging.getLogger('RSSFeedReaderUI.py')
 
@@ -53,8 +55,38 @@ class RSSFeedReaderUI:
         self.load_config()
         self.load_settings()
         self.url_cooldown = False 
+
+        try:
+            ctypes.windll.shcore.SetProcessDpiAwareness(1)
+        except AttributeError:
+            pass
+
+        width, height = 600, 700
+
+        self.scale_factor = self.get_scaling_factor()
+
+        if self.scale_factor > 1:
+            width = int(width * self.scale_factor * 1)
+            height = int(height * self.scale_factor * 1)
+
+        self.master.geometry(f"{width}x{height}+0+0")
+
         self.create_widgets()
         self.master.protocol("WM_DELETE_WINDOW", self.on_close)
+
+    def get_scaling_factor(self):
+        """Get the scaling factor for high resolution displays."""
+        scaling_factor = 1.0
+
+        try:
+            user32 = ctypes.windll.user32
+            user32.SetProcessDPIAware()
+            dpi = user32.GetDpiForSystem()
+            scaling_factor = dpi / 96.0  
+        except AttributeError:
+            pass
+
+        return scaling_factor
 
     def open_url(self, url):
         logger.info("Opening url...")
@@ -90,8 +122,11 @@ class RSSFeedReaderUI:
         settings_window = tk.Toplevel(self.master)
         settings_window.title("Settings")
         settings_window.configure(bg=self.window_bg)
+        settings_window_width = int(400 * self.scale_factor)
+        settings_window_height = int(200 * self.scale_factor)
+        settings_window.geometry(f"{settings_window_width}x{settings_window_height}")
 
-        font_style = (self.font_family, int(self.font_size * 10))
+        font_style = (self.font_family, int(self.font_size * 10 * self.scale_factor))
 
         style = ttk.Style()
         style.configure("Settings.TLabel", background=self.window_bg, foreground=self.font_color, font=font_style)
@@ -99,14 +134,16 @@ class RSSFeedReaderUI:
         entries_label = ttk.Label(settings_window, text="Entries per Feed:", style="Settings.TLabel")
         entries_label.grid(row=0, column=0, padx=5, pady=5, sticky=tk.W)
         entries_var = tk.IntVar(value=self.entries_per_feed)
-        entries_spinbox = tk.Spinbox(settings_window, from_=1, to=100, textvariable=entries_var, bg=self.spinbox_bg, fg=self.font_color, font=font_style)
+        entries_spinbox = tk.Spinbox(settings_window, from_=1, to=100, textvariable=entries_var, bg=self.spinbox_bg, fg=self.font_color, font=font_style)        
         entries_spinbox.grid(row=0, column=1, padx=5, pady=5)
+        ToolTip(entries_spinbox, "Set the number of entries per feed", font_style)
 
         refresh_label = ttk.Label(settings_window, text="Refresh Interval (mins):", style="Settings.TLabel")
         refresh_label.grid(row=1, column=0, padx=5, pady=5, sticky=tk.W)
         refresh_var = tk.IntVar(value=self.refresh_interval_mins)
-        refresh_spinbox = tk.Spinbox(settings_window, from_=1, to=1440, textvariable=refresh_var, bg=self.spinbox_bg, fg=self.font_color, font=font_style)
+        refresh_spinbox = tk.Spinbox(settings_window, from_=1, to=1440, textvariable=refresh_var, bg=self.spinbox_bg, fg=self.font_color, font=font_style)        
         refresh_spinbox.grid(row=1, column=1, padx=5, pady=5)
+        ToolTip(refresh_spinbox, "Set the refresh interval in minutes", font_style)
 
         format_label = ttk.Label(settings_window, text="Display Format:", style="Settings.TLabel")
         format_label.grid(row=2, column=0, padx=5, pady=5, sticky=tk.W)
@@ -115,15 +152,20 @@ class RSSFeedReaderUI:
         format_dropdown = tk.OptionMenu(settings_window, format_var, self.display_format, *format_options)
         format_dropdown.configure(bg=self.button_bg, fg=self.font_color, font=font_style)
         format_dropdown.grid(row=2, column=1, padx=5, pady=5)
+        ToolTip(format_dropdown, "Select the display format for entries", font_style)
 
-        save_button = tk.Button(settings_window, text="Save", command=lambda: self.save_settings(entries_var.get(), refresh_var.get(), format_var.get()), bg=self.button_bg, fg=self.font_color, font=font_style)
+        save_button = tk.Button(settings_window, text="Save", command=lambda: self.save_settings(entries_var.get(), refresh_var.get(), format_var.get()), bg=self.button_bg, fg=self.font_color, font=font_style)        
         save_button.grid(row=3, column=0, columnspan=2, padx=5, pady=5)
-    
+        ToolTip(save_button, "Save the settings", font_style)
+        
         logger.info("Settings opened...")
 
     def save_settings(self, entries_per_feed, refresh_interval_mins, display_format):
         config = configparser.ConfigParser()
         config.read("config.ini")
+
+        if not config.has_section("FeedSettings"):
+            config.add_section("FeedSettings")
 
         config.set("FeedSettings", "entries_per_feed", str(entries_per_feed))
         config.set("FeedSettings", "refresh_interval_mins", str(refresh_interval_mins))
@@ -138,7 +180,7 @@ class RSSFeedReaderUI:
 
         logger.info("Settings Saved...")
         self.refresh_feeds()
- 
+        
     def load_config(self):
         logger.info("Loading configuration from config.ini...")
         try:
@@ -175,8 +217,15 @@ class RSSFeedReaderUI:
         
     def create_widgets(self):
         logger.info("Creating UI widgets...")
+
+        icon_size = int(32 * self.scale_factor)
+        settings_img = Image.open("assets/icons/settings_icon.png")
+        settings_img = settings_img.resize((icon_size, icon_size), Image.Resampling.LANCZOS)
+        self.settings_icon = ImageTk.PhotoImage(settings_img)
+
         try:
-            font_style = (self.font_family, int(self.font_size * 10))
+            font_size = int(self.font_size * 10 * self.scale_factor)
+            font_style = (self.font_family, font_size)
             self.master.configure(bg=self.window_bg)
 
             style = ttk.Style()
@@ -186,57 +235,73 @@ class RSSFeedReaderUI:
             settings_frame = tk.Frame(self.master, bg=self.window_bg)
             settings_frame.grid(row=0, column=0, columnspan=4, padx=5, pady=5, sticky=tk.E)
 
-            self.settings_button = tk.Button(settings_frame, text="Settings", command=self.open_settings, bg=self.button_bg, fg=self.font_color, font=font_style)
+            self.settings_button = tk.Button(settings_frame, image=self.settings_icon, command=self.open_settings, bg=self.window_bg, fg=self.font_color, font=font_style, bd=0, highlightthickness=0)
             self.settings_button.pack(side=tk.RIGHT)
+            ToolTip(self.settings_button, "Open Settings", font_style)
 
             self.feed_url_label = ttk.Label(self.master, text="Feed URL:")
-            self.feed_url_label.grid(row=1, column=0, padx=5, pady=5, sticky=tk.W)
+            self.feed_url_label.grid(row=1, column=0, padx=5, pady=5, sticky=tk.W+tk.E)
 
             self.feed_url_entry = tk.Entry(self.master, width=40, bg="#C0C0C0", fg="black", font=font_style)
-            self.feed_url_entry.grid(row=1, column=1, padx=5, pady=5)
+            self.feed_url_entry.grid(row=1, column=1, padx=5, pady=5, sticky=tk.W+tk.E)
+            ToolTip(self.feed_url_entry, "Enter the URL of the RSS feed", font_style)
 
             self.category_label = ttk.Label(self.master, text="Category:")
-            self.category_label.grid(row=2, column=0, padx=5, pady=5, sticky=tk.W)
+            self.category_label.grid(row=2, column=0, padx=5, pady=5, sticky=tk.W+tk.E)
 
             self.category_entry = tk.Entry(self.master, width=40, bg="#C0C0C0", fg="black", font=font_style)
-            self.category_entry.grid(row=2, column=1, padx=5, pady=5)
+            self.category_entry.grid(row=2, column=1, padx=5, pady=5, sticky=tk.W+tk.E)
+            ToolTip(self.category_entry, "Enter a category for the RSS feed", font_style)
 
             self.add_feed_button = tk.Button(self.master, text="Add Feed", command=self.add_feed, bg=self.button_bg, fg=self.font_color, font=font_style)
-            self.add_feed_button.grid(row=1, column=2, rowspan=2, padx=5, pady=5)
+            self.add_feed_button.grid(row=1, column=2, rowspan=2, padx=5, pady=5, sticky=tk.W+tk.E)
+            ToolTip(self.add_feed_button, "Add a new RSS feed", font_style)
 
             self.feeds_listbox = tk.Listbox(self.master, width=70, font=font_style, bg=self.window_bg, fg=self.font_color, exportselection=False, selectmode=tk.SINGLE)
-            self.feeds_listbox.grid(row=3, column=0, columnspan=4, padx=5, pady=5)
+            self.feeds_listbox.grid(row=3, column=0, columnspan=4, padx=5, pady=5, sticky=tk.W+tk.E+tk.N+tk.S)
             self.feeds_listbox.bind("<Button-1>", self.on_feed_click)
 
             button_frame = tk.Frame(self.master, bg=self.window_bg)
-            button_frame.grid(row=4, column=0, columnspan=4, padx=5, pady=5, sticky=tk.E)
+            button_frame.grid(row=4, column=0, columnspan=4, padx=5, pady=5, sticky=tk.W+tk.E)
 
             self.start_feed_button = tk.Button(button_frame, text="Start Feed", command=self.start_feed, bg=self.button_bg, fg=self.font_color, font=font_style, state=tk.DISABLED)
             self.start_feed_button.pack(side=tk.RIGHT, padx=(0, 5))
+            ToolTip(self.start_feed_button, "Start the selected RSS feed", font_style)
 
             self.remove_feed_button = tk.Button(button_frame, text="Remove Feed", command=self.remove_feed, bg=self.button_bg, fg=self.font_color, font=font_style, state=tk.DISABLED)
             self.remove_feed_button.pack(side=tk.RIGHT)
+            ToolTip(self.remove_feed_button, "Remove the selected RSS feed", font_style)
 
             self.entries_listbox = tk.Listbox(self.master, width=70, font=font_style, bg=self.window_bg, fg=self.font_color, exportselection=False, selectmode=tk.SINGLE)
-            self.entries_listbox.grid(row=5, column=0, columnspan=4, padx=5, pady=5)
+            self.entries_listbox.grid(row=5, column=0, columnspan=4, padx=5, pady=5, sticky=tk.W+tk.E+tk.N+tk.S)
             self.entries_listbox.bind("<Button-1>", self.on_entry_click)
 
             entry_button_frame = tk.Frame(self.master, bg=self.window_bg)
-            entry_button_frame.grid(row=6, column=0, columnspan=4, padx=5, pady=5, sticky=tk.E)
+            entry_button_frame.grid(row=6, column=0, columnspan=4, padx=5, pady=5, sticky=tk.W+tk.E)
 
             self.show_entry_button = tk.Button(entry_button_frame, text="Show Entry Details", command=self.show_entry_details, bg=self.button_bg, fg=self.font_color, font=font_style, state=tk.DISABLED)
             self.show_entry_button.pack(side=tk.RIGHT, padx=(0, 5))
+            ToolTip(self.show_entry_button, "Show details of the selected entry", font_style)
 
             self.remove_entry_button = tk.Button(entry_button_frame, text="Remove Entry", command=self.remove_entry, bg=self.button_bg, fg=self.font_color, font=font_style, state=tk.DISABLED)
             self.remove_entry_button.pack(side=tk.RIGHT)
+            ToolTip(self.remove_entry_button, "Remove the selected entry", font_style)
 
             self.entry_details_text = tk.Text(self.master, width=70, height=10, font=font_style, bg=self.window_bg, fg=self.font_color, state='disabled', cursor='arrow')
-            self.entry_details_text.grid(row=7, column=0, columnspan=4, padx=5, pady=5)
+            self.entry_details_text.grid(row=7, column=0, columnspan=4, padx=5, pady=5, sticky=tk.W+tk.E+tk.N+tk.S)
             self.entry_details_text.bind('<Control-c>', self.copy_selection)
             self.entry_details_text.bind('<Button-3>', self.show_text_context_menu)
 
             self.feed_url_entry.bind('<Button-3>', self.show_context_menu)
             self.category_entry.bind('<Button-3>', self.show_context_menu)
+
+            self.master.grid_rowconfigure(3, weight=1)
+            self.master.grid_rowconfigure(5, weight=1)
+            self.master.grid_rowconfigure(7, weight=1)
+            self.master.grid_columnconfigure(0, weight=1)
+            self.master.grid_columnconfigure(1, weight=1)
+            self.master.grid_columnconfigure(2, weight=1)
+            self.master.grid_columnconfigure(3, weight=1)
 
             self.refresh_feeds()
         except Exception as e:
