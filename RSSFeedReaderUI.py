@@ -69,6 +69,7 @@ class RSSFeedReaderUI:
 
     async def open_url_async(self, url):
         chrome_options = Options()
+        chrome_options.add_argument('--force-dark-mode')
         chrome_options.add_experimental_option("detach", True)
         driver = webdriver.Chrome(options=chrome_options)
         driver.get(url)
