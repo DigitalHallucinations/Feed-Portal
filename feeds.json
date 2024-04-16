@@ -1,0 +1,708 @@
+{
+  "TECH": {
+    "feeds": [
+      {
+        "url": "https://techcrunch.com/feed/"
+      }
+    ],
+    "entries": {
+      "https://techcrunch.com/feed/": [
+        {
+          "title": "Elon Musk plans to charge new X users to enable posting",
+          "link": "https://techcrunch.com/2024/04/15/elon-musk-plans-to-charge-new-x-users-to-enable-posting/",
+          "published": "Mon, 15 Apr 2024 18:48:56 +0000",
+          "summary": "<p>Elon Musk is planning to charge new X users a small fee to enable posting on the social network and to curb the bot problem. In reply to an X account that posted about changes on X&#8217;s website, Musk said charging a small fee to new accounts was the &#8220;only way&#8221; to stop the &#8220;onslaught [&#8230;]</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "PVML combines an AI-centric data access and analysis platform with differential privacy",
+          "link": "https://techcrunch.com/2024/04/15/pvml-combines-an-ai-centric-data-access-and-analysis-platform-with-differential-privacy/",
+          "published": "Mon, 15 Apr 2024 18:17:31 +0000",
+          "summary": "<p>The Tel Aviv-based company recently announced that it has raised an $8 million seed round led by NFX, with participation from FJ Labs and Gefen Capital.</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "Apple pulls a Game Boy emulator for App Store violations, but says game emulators are allowed",
+          "link": "https://techcrunch.com/2024/04/15/apple-pulls-a-game-boy-emulator-for-app-store-violations-but-says-game-emulators-are-allowed/",
+          "published": "Mon, 15 Apr 2024 17:25:01 +0000",
+          "summary": "<p>iGBA was an ad-supported copy of the open-source project GBA4iOS that offered a Game Boy game emulator for iOS.</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "TechCrunch Minute: Where the Apple Vision Pro stands now that the launch day hype has dropped off",
+          "link": "https://techcrunch.com/2024/04/15/techcrunch-minute-where-the-apple-vision-pro-stands-now-the-launch-day-hype-has-dropped-off/",
+          "published": "Mon, 15 Apr 2024 16:00:31 +0000",
+          "summary": "<p>A few months after its launch, how is Apple&#8217;s Vision Pro faring? The company&#8217;s ambitious bet on computers that nestle on your face instead of sit on your desk made a huge splash when it was announced and later released. However, the hype has since seemingly come back down to Earth. I am a long-term [&#8230;]</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "Investors are growing increasingly weary of AI",
+          "link": "https://techcrunch.com/2024/04/15/investors-are-growing-increasingly-wary-of-ai/",
+          "published": "Mon, 15 Apr 2024 15:00:14 +0000",
+          "summary": "<p>A new report from Stanford's Institute for Human-Centered Artificial Intelligence (HAI) found that global investment in AI fell for the second year in a row in 2023.</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "A comprehensive list of 2023 & 2024 tech layoffs",
+          "link": "https://techcrunch.com/2024/04/15/tech-layoffs-2023-list/",
+          "published": "Mon, 15 Apr 2024 14:45:20 +0000",
+          "summary": "<p>The tech-wide reckoning that began in 2022\u00a0and ran throughout into 2023 has continued into this year. And while 2024&#8217;s losses are not at that scale, they&#8217;re still significant, driven by big names like Pixar, Google, Microsoft, Mozilla and TikTok. It remains to be seen if this year&#8217;s layoff trends follow last year&#8217;s, in which layoffs [&#8230;]</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "Tesla execs Drew Baglino and Rohan Patel leave as company lays off 10%",
+          "link": "https://techcrunch.com/2024/04/15/tesla-layoffs-workers-sales-cybertruck-cuts/",
+          "published": "Mon, 15 Apr 2024 14:33:20 +0000",
+          "summary": "<p>Two high-profile executives have departed Tesla the same day that the electric automaker laid off thousands of workers, TechCrunch has confirmed. Drew Baglino, Tesla&#8217;s SVP of Powertrain and Energy, and Rohan Patel, VP of Public Policy and Business Development, have left the company, Patel told TechCrunch. Patel said he decided to leave because of &#8220;[b]ig [&#8230;]</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "OpenAI plans new Tokyo office, Tesla lays offs thousands",
+          "link": "https://techcrunch.com/2024/04/15/openai-plans-new-tokyo-office-tesla-lays-offs-thousands/",
+          "published": "Mon, 15 Apr 2024 14:25:12 +0000",
+          "summary": "<p>Today on Equity, Tesla cuts staff, and OpenAI has plans for an office in Tokyo along with a new GPT-4 model for the Japanese language.</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "Jio Financial, BlackRock to tap India\u2019s wealth management market",
+          "link": "https://techcrunch.com/2024/04/15/jio-financial-blackrock-form-jv-for-wealth-management-and-broking-in-india/",
+          "published": "Mon, 15 Apr 2024 14:23:26 +0000",
+          "summary": "<p>Jio Financial Services, part of the Indian conglomerate Reliance, is forming a joint venture with U.S. asset manager BlackRock to set up a wealth management and broking business in India, the two firms said Monday. The announcement follows BlackRock and Jio Financial launching a joint venture last year to offer asset management services in India. [&#8230;]</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "Kode Labs makes a bid to become the Salesforce of commercial building automation",
+          "link": "https://techcrunch.com/2024/04/15/kode-labs-series-b-exclusive/",
+          "published": "Mon, 15 Apr 2024 14:00:06 +0000",
+          "summary": "<p>Kode's platform allows customers to control HVAC and lighting, monitor energy use, track carbon emissions and keep an eye on water consumption.</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "Paraform raises $3.6M seed round to connect startups with recruiter networks",
+          "link": "https://techcrunch.com/2024/04/15/paraform-a-recruiting-platform-that-connects-recruiters-and-startups-raises-funding/",
+          "published": "Mon, 15 Apr 2024 13:00:44 +0000",
+          "summary": "<p>Layoffs usually drive attention and sympathy toward affected employees, but rarely does anyone talk about what happens to the recruiters who are sometimes also asked to leave when companies decide to cut headcount. Indeed, tech firms cut up to half of their recruitment teams when they were laying people off in droves back in 2022 [&#8230;]</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "Adobe\u2019s working on generative video, too",
+          "link": "https://techcrunch.com/2024/04/15/adobes-working-on-generative-video-too/",
+          "published": "Mon, 15 Apr 2024 13:00:33 +0000",
+          "summary": "<p>Adobe says it&#8217;s building an AI model to generate video. But it&#8217;s not revealing when this model will launch, exactly &#8212; or much about it besides the fact that it exists. Offered as an answer of sorts to OpenAI&#8217;s Sora, Google&#8217;s Imagen 2 and models from the growing number of startups in the nascent generative [&#8230;]</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "Draftboard lets companies list referral bonuses for anyone",
+          "link": "https://techcrunch.com/2024/04/15/draftboard-lets-companies-list-referral-bonuses-for-anyone/",
+          "published": "Mon, 15 Apr 2024 13:00:10 +0000",
+          "summary": "<p>Companies that offer role referral bonuses do so with the assumption that their employees know their work culture &#8212; and a role&#8217;s requirements &#8212; best. But what if companies were to open up those referral bonuses to people outside the organization? That&#8217;s the idea behind Draftboard, co-founded by Zach Roseman, the former CEO of mobile [&#8230;]</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "Meta\u2019s \u2018consent or pay\u2019 tactic must not prevail over privacy, EU rights groups warn",
+          "link": "https://techcrunch.com/2024/04/15/consent-or-pay-open-letter-edpb/",
+          "published": "Mon, 15 Apr 2024 12:57:16 +0000",
+          "summary": "<p>Nearly two dozen rights groups are urging the EDPB to not endorse a strategy used by Meta that they say is intended to bypass the EU's privacy protections.</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "Meta to close Threads in Turkey to comply with injunction prohibiting data sharing with Instagram",
+          "link": "https://techcrunch.com/2024/04/15/meta-to-close-threads-in-turkey-to-comply-with-injunction-prohibiting-data-sharing-with-instagram/",
+          "published": "Mon, 15 Apr 2024 12:18:45 +0000",
+          "summary": "<p>Meta will \"temporarily\" shutter Threads in Turkey on April 29, in response to an injunction imposed by the country's competition authority.</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "Lawhive raises $12M to expand its legal tech AI platform for small firms",
+          "link": "https://techcrunch.com/2024/04/15/lawhive-raises-12m-to-expand-its-legaltech-ai-platform-for-small-firms/",
+          "published": "Mon, 15 Apr 2024 10:58:27 +0000",
+          "summary": "<p>Lawhive has raised \u00a39.5 million ($11.9 million) in a seed round to offer AI-driven services to \u2018main street\u2019 law firms.</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "Bluesky is now allowing heads of states to sign up",
+          "link": "https://techcrunch.com/2024/04/15/bluesky-now-allows-heads-of-states-to-sign-up-for-the-social-network/",
+          "published": "Mon, 15 Apr 2024 09:41:56 +0000",
+          "summary": "<p>Social networking service Bluesky is now allowing heads of state to sign up and join the platform. The move comes ahead of major general elections in countries like the U.S. and India this year.</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "OpenAI opens Tokyo hub, adds GPT-4 model optimized for Japanese",
+          "link": "https://techcrunch.com/2024/04/15/openai-announces-tokyo-office-and-gpt-4-model-optimized-for-the-japanese-language/",
+          "published": "Mon, 15 Apr 2024 09:34:45 +0000",
+          "summary": "<p>OpenAI is expanding to Japan, with the opening of a new Tokyo office and plans for a GPT-4 model optimized specifically for the Japanese language. The move is significant for a few reasons. It underscores the opportunity the company sees to court business in the country and highlights how OpenAI will likely need to localize [&#8230;]</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "ShareChat\u2019s valuation drops below $2B after new funding round",
+          "link": "https://techcrunch.com/2024/04/14/sharechats-valuation-drops-below-2-billion-in-new-funding/",
+          "published": "Mon, 15 Apr 2024 06:36:16 +0000",
+          "summary": "<p>Social media startup ShareChat's valuation has cratered below $2 billion from nearly $5 billion in a new funding round.</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        },
+        {
+          "title": "Pula raises $20M Series B to provide agricultural insurance to farmers in Africa, Asia and LatAm",
+          "link": "https://techcrunch.com/2024/04/14/pula-raises-20m-series-b/",
+          "published": "Mon, 15 Apr 2024 06:05:05 +0000",
+          "summary": "<p>Since 2015, Pula, an insurtech based in Kenya, has been keen on enhancing the access to agricultural insurance by small-holder farmers across emerging markets, shielding them against losses from pests, diseases and/or extreme weather events like floods and droughts. So far, the insurtech has supported 15.4 million farmers in Africa, Asia and Latin America to [&#8230;]</p>\n<p>\u00a9 2024 TechCrunch. All rights reserved. For personal use only.</p>"
+        }
+      ]
+    }
+  },
+  "AI and Machine Learning": {
+    "feeds": [
+      {
+        "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/"
+      },
+      {
+        "url": "https://openai.com/blog/rss/"
+      },
+      {
+        "url": "https://openai.com/blog/rss/"
+      },
+      {
+        "url": "https://jack-clark.net/feed/"
+      }
+    ],
+    "entries": {
+      "https://www.technologyreview.com/topic/artificial-intelligence/feed/": [
+        {
+          "title": "Is robotics about to have its own ChatGPT moment?",
+          "link": "https://www.technologyreview.com/2024/04/11/1090718/household-robots-ai-data-robotics/",
+          "published": "Thu, 11 Apr 2024 09:00:00 +0000",
+          "summary": "Silent. Rigid. Clumsy. Henry and Jane Evans are used to awkward houseguests. For more than a decade, the couple, who live in Los Altos Hills, California, have hosted a slew of robots in their home.&#160; In 2002, at age 40, Henry had a massive stroke, which left him with quadriplegia and an inability to speak.&#8230;"
+        },
+        {
+          "title": "Generative AI can turn your most precious memories into photos that never existed",
+          "link": "https://www.technologyreview.com/2024/04/10/1091053/generative-ai-turn-your-most-precious-memories-into-photos/",
+          "published": "Wed, 10 Apr 2024 09:53:52 +0000",
+          "summary": "Maria grew up in Barcelona, Spain, in the 1940s. Her first memories of her father are vivid. As a six-year-old, Maria would visit a neighbor\u2019s apartment in her building when she wanted to see him. From there, she could peer through the railings of a balcony into the prison below and try to catch a&#8230;"
+        },
+        {
+          "title": "Open-sourcing generative AI",
+          "link": "https://www.technologyreview.com/2024/04/09/1087440/open-sourcing-generative-ai/",
+          "published": "Tue, 09 Apr 2024 18:35:09 +0000",
+          "summary": "The views expressed in this video are those of the speakers, and do not represent any endorsement or sponsorship. Is the open-source approach, which has democratized access to software, ensured transparency, and improved security for decades, now poised to have a similar impact on AI? We dissect the balance between collaboration and control, legal ramifications,&#8230;"
+        },
+        {
+          "title": "Taking AI to the next level in manufacturing",
+          "link": "https://www.technologyreview.com/2024/04/09/1090880/taking-ai-to-the-next-level-in-manufacturing/",
+          "published": "Tue, 09 Apr 2024 16:00:00 +0000",
+          "summary": "Few technological advances have generated as much excitement as AI. In particular, generative AI seems to have taken business discourse to a fever pitch. Many manufacturing leaders express optimism: Research conducted by MIT Technology Review Insights found ambitions for AI development to be stronger in manufacturing than in most other sectors. Manufacturers rightly view AI&#8230;"
+        },
+        {
+          "title": "Tackling AI risks: Your reputation is at stake",
+          "link": "https://www.technologyreview.com/2024/04/08/1090492/tackling-ai-risks-your-reputation-is-at-stake/",
+          "published": "Mon, 08 Apr 2024 16:00:00 +0000",
+          "summary": "Forget Skynet: One of the biggest risks of AI is your organization\u2019s reputation. That means it\u2019s time to put science-fiction catastrophizing to one side and begin thinking seriously about what AI actually means for us in our day-to-day work. This isn\u2019t to advocate for navel-gazing at the expense of the bigger picture: It\u2019s to urge&#8230;"
+        },
+        {
+          "title": "A conversation with Drago\u0219 Tudorache, the politician behind the AI Act",
+          "link": "https://www.technologyreview.com/2024/04/08/1090924/a-conversation-with-dragos-tudorache-the-politician-behind-the-ai-act/",
+          "published": "Mon, 08 Apr 2024 09:43:59 +0000",
+          "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Drago\u0219 Tudorache is feeling pretty damn good. We\u2019re sitting in a conference room in a chateau overlooking a lake outside Brussels, sipping glasses of cava. The Romanian liberal member of the&#8230;"
+        },
+        {
+          "title": "Scaling customer experiences with data and AI",
+          "link": "https://www.technologyreview.com/2024/04/01/1090076/scaling-customer-experiences-with-data-and-ai/",
+          "published": "Mon, 01 Apr 2024 14:00:00 +0000",
+          "summary": "Today, interactions matter more than ever. According to data compiled by NICE, once a consumer makes a buying decision for a product or service, 80% of their decision to keep doing business with that brand hinges on the quality of their customer service experience, according to NICE research. Enter AI. &#8220;I think AI is becoming&#8230;"
+        },
+        {
+          "title": "A conversation with OpenAI\u2019s first artist in residence",
+          "link": "https://www.technologyreview.com/2024/03/29/1090335/a-conversation-with-openais-first-artist-in-residence/",
+          "published": "Fri, 29 Mar 2024 15:37:28 +0000",
+          "summary": "Alex Reben\u2019s work is often absurd, sometimes surreal: a mash-up of giant ears imagined by DALL-E and sculpted by hand out of marble; critical burns generated by ChatGPT that thumb the nose at AI art. But its message is relevant to everyone. Reben is interested in the roles humans play in a world filled with&#8230;"
+        },
+        {
+          "title": "It\u2019s easy to tamper with watermarks from AI-generated text",
+          "link": "https://www.technologyreview.com/2024/03/29/1090310/its-easy-to-tamper-with-watermarks-from-ai-generated-text/",
+          "published": "Fri, 29 Mar 2024 14:51:24 +0000",
+          "summary": "Watermarks for AI-generated text are easy to remove and can be stolen and copied, rendering them useless, researchers have found. They say these kinds of attacks discredit watermarks and can fool people into trusting text they shouldn\u2019t.&#160; Watermarking works by inserting hidden patterns in AI-generated text, which allow computers to detect that the text comes&#8230;"
+        },
+        {
+          "title": "How three filmmakers created Sora\u2019s latest stunning videos",
+          "link": "https://www.technologyreview.com/2024/03/28/1090266/how-three-filmmakers-created-soras-latest-jaw-dropping-videos/",
+          "published": "Thu, 28 Mar 2024 12:49:38 +0000",
+          "summary": "In the last month, a handful of filmmakers have taken Sora for a test drive. The results, which OpenAI published this week, are amazing. The short films are a big jump up even from the cherry-picked demo videos that OpenAI used to tease its new generative model just six weeks ago. Here\u2019s how three of&#8230;"
+        }
+      ],
+      "https://openai.com/blog/rss/": [
+        {
+          "title": "Introducing OpenAI Japan",
+          "link": "https://openai.com/blog/introducing-openai-japan",
+          "published": "Sun, 14 Apr 2024 07:00:00 GMT",
+          "summary": "We are excited to announce our first office in Asia and we\u2019re releasing a GPT-4 custom model optimized for the Japanese language."
+        },
+        {
+          "title": "Introducing improvements to the fine-tuning API and expanding our custom models program",
+          "link": "https://openai.com/blog/introducing-improvements-to-the-fine-tuning-api-and-expanding-our-custom-models-program",
+          "published": "Thu, 04 Apr 2024 07:00:00 GMT",
+          "summary": "We\u2019re adding new features to help developers have more control over fine-tuning and announcing new ways to build custom models with OpenAI."
+        },
+        {
+          "title": "Start using ChatGPT instantly",
+          "link": "https://openai.com/blog/start-using-chatgpt-instantly",
+          "published": "Mon, 01 Apr 2024 07:00:00 GMT",
+          "summary": "We\u2019re making it easier for people to experience the benefits of AI without needing to sign up"
+        },
+        {
+          "title": "Navigating the Challenges and Opportunities of Synthetic Voices",
+          "link": "https://openai.com/blog/navigating-the-challenges-and-opportunities-of-synthetic-voices",
+          "published": "Fri, 29 Mar 2024 07:00:00 GMT",
+          "summary": "We\u2019re sharing lessons from a small scale preview of Voice Engine, a model for creating custom voices."
+        },
+        {
+          "title": "Sora: first impressions",
+          "link": "https://openai.com/blog/sora-first-impressions",
+          "published": "Mon, 25 Mar 2024 07:00:00 GMT",
+          "summary": "We have gained valuable feedback from the creative community, helping us to improve our model."
+        },
+        {
+          "title": "Global news partnerships: Le Monde and Prisa Media",
+          "link": "https://openai.com/blog/global-news-partnerships-le-monde-and-prisa-media",
+          "published": "Wed, 13 Mar 2024 07:00:00 GMT",
+          "summary": "We have partnered with international news organizations Le Monde and Prisa Media to bring French and Spanish news content to ChatGPT."
+        },
+        {
+          "title": "Review completed & Altman, Brockman to continue to lead OpenAI",
+          "link": "https://openai.com/blog/review-completed-altman-brockman-to-continue-to-lead-openai",
+          "published": "Fri, 08 Mar 2024 08:00:00 GMT",
+          "summary": "New board members named and enhancements to the governance structure introduced"
+        },
+        {
+          "title": "OpenAI announces new members to board of directors",
+          "link": "https://openai.com/blog/openai-announces-new-members-to-board-of-directors",
+          "published": "Fri, 08 Mar 2024 08:00:00 GMT",
+          "summary": "Dr. Sue Desmond-Hellmann, Nicole Seligman, Fidji Simo join; Sam Altman rejoins board"
+        },
+        {
+          "title": "OpenAI and Elon Musk",
+          "link": "https://openai.com/blog/openai-elon-musk",
+          "published": "Tue, 05 Mar 2024 08:00:00 GMT",
+          "summary": "We are dedicated to the OpenAI mission and have pursued it every step of the way."
+        },
+        {
+          "title": "Video generation models as world simulators",
+          "link": "https://openai.com/research/video-generation-models-as-world-simulators",
+          "published": "Thu, 15 Feb 2024 08:00:00 GMT",
+          "summary": "We explore large-scale training of generative models on video data. Specifically, we train text-conditional diffusion models jointly on videos and images of variable durations, resolutions and aspect ratios. We leverage a transformer architecture that operates on spacetime patches of video and image latent codes. Our largest model, Sora, is capable of generating a minute of high fidelity video. Our results suggest that scaling video generation models is a promising path towards building general purpose simulators of the physical world."
+        },
+        {
+          "title": "Disrupting malicious uses of AI by state-affiliated threat actors",
+          "link": "https://openai.com/blog/disrupting-malicious-uses-of-ai-by-state-affiliated-threat-actors",
+          "published": "Wed, 14 Feb 2024 08:00:00 GMT",
+          "summary": "We terminated accounts associated with state-affiliated threat actors. Our findings show our models offer only limited, incremental capabilities for malicious cybersecurity tasks."
+        },
+        {
+          "title": "Memory and new controls for ChatGPT",
+          "link": "https://openai.com/blog/memory-and-new-controls-for-chatgpt",
+          "published": "Tue, 13 Feb 2024 08:00:00 GMT",
+          "summary": "We\u2019re testing the ability for ChatGPT to remember things you discuss to make future chats more helpful. You\u2019re in control of ChatGPT\u2019s memory."
+        },
+        {
+          "title": "Building an early warning system for LLM-aided biological threat creation",
+          "link": "https://openai.com/research/building-an-early-warning-system-for-llm-aided-biological-threat-creation",
+          "published": "Wed, 31 Jan 2024 08:00:00 GMT",
+          "summary": "We\u2019re developing a blueprint for evaluating the risk that a large language model (LLM) could aid someone in creating a biological threat.\u00a0In an evaluation involving both biology experts and students, we found that GPT-4 provides at most a mild uplift in biological threat creation accuracy. While this uplift is not large enough to be conclusive, our finding is a starting point for continued research and community deliberation."
+        },
+        {
+          "title": "New embedding models and API updates",
+          "link": "https://openai.com/blog/new-embedding-models-and-api-updates",
+          "published": "Thu, 25 Jan 2024 08:00:00 GMT",
+          "summary": "We are launching a new generation of embedding models, new GPT-4 Turbo and moderation models, new API usage management tools, and soon, lower pricing on GPT-3.5 Turbo."
+        },
+        {
+          "title": "Democratic inputs to AI grant program: lessons learned and implementation plans",
+          "link": "https://openai.com/blog/democratic-inputs-to-ai-grant-program-update",
+          "published": "Tue, 16 Jan 2024 08:00:00 GMT",
+          "summary": "We funded 10 teams from around the world to design ideas and tools to collectively govern AI. We summarize the innovations, outline our learnings, and call for researchers and engineers to join us as we continue this work."
+        },
+        {
+          "title": "How OpenAI is approaching 2024 worldwide elections",
+          "link": "https://openai.com/blog/how-openai-is-approaching-2024-worldwide-elections",
+          "published": "Mon, 15 Jan 2024 08:00:00 GMT",
+          "summary": "We\u2019re working to prevent abuse, provide transparency on AI-generated content, and improve access to accurate voting information."
+        },
+        {
+          "title": "Introducing the GPT Store",
+          "link": "https://openai.com/blog/introducing-the-gpt-store",
+          "published": "Wed, 10 Jan 2024 08:00:00 GMT",
+          "summary": "We\u2019re launching the GPT Store to help you find useful and popular custom versions of ChatGPT."
+        },
+        {
+          "title": "Introducing ChatGPT Team",
+          "link": "https://openai.com/blog/introducing-chatgpt-team",
+          "published": "Wed, 10 Jan 2024 08:00:00 GMT",
+          "summary": "We\u2019re launching a new ChatGPT plan for teams of all sizes, which provides a secure, collaborative workspace to get the most out of ChatGPT at work."
+        },
+        {
+          "title": "OpenAI and journalism",
+          "link": "https://openai.com/blog/openai-and-journalism",
+          "published": "Mon, 08 Jan 2024 08:00:00 GMT",
+          "summary": "We support journalism, partner with news organizations, and believe The New York Times lawsuit is without merit."
+        },
+        {
+          "title": "Superalignment Fast Grants",
+          "link": "https://openai.com/blog/superalignment-fast-grants",
+          "published": "Thu, 14 Dec 2023 08:00:00 GMT",
+          "summary": "We\u2019re launching $10M in grants to support technical research towards the alignment and safety of superhuman AI systems, including weak-to-strong generalization, interpretability, scalable oversight, and more."
+        },
+        {
+          "title": "Practices for Governing Agentic AI Systems",
+          "link": "https://openai.com/research/practices-for-governing-agentic-ai-systems",
+          "published": "Thu, 14 Dec 2023 08:00:00 GMT",
+          "summary": ""
+        },
+        {
+          "title": "Weak-to-strong generalization",
+          "link": "https://openai.com/research/weak-to-strong-generalization",
+          "published": "Thu, 14 Dec 2023 08:00:00 GMT",
+          "summary": "We present a new research direction for superalignment, together with promising initial results: can we leverage the generalization properties of deep learning to control strong models with weak supervisors?"
+        },
+        {
+          "title": "Partnership with Axel Springer to deepen beneficial use of AI in journalism",
+          "link": "https://openai.com/blog/axel-springer-partnership",
+          "published": "Wed, 13 Dec 2023 08:00:00 GMT",
+          "summary": "Axel Springer is the first publishing house globally to partner with us on a deeper integration of journalism in AI technologies."
+        },
+        {
+          "title": "Sam Altman returns as CEO, OpenAI has a new initial board",
+          "link": "https://openai.com/blog/sam-altman-returns-as-ceo-openai-has-a-new-initial-board",
+          "published": "Wed, 29 Nov 2023 08:00:00 GMT",
+          "summary": "Mira Murati as CTO, Greg Brockman returns as President. Read messages from CEO Sam Altman and board chair Bret Taylor."
+        },
+        {
+          "title": "DALL\u00b7E 3 system card",
+          "link": "https://openai.com/research/dall-e-3-system-card",
+          "published": "Tue, 03 Oct 2023 07:00:00 GMT",
+          "summary": ""
+        },
+        {
+          "title": "GPT-4V(ision) system card",
+          "link": "https://openai.com/research/gpt-4v-system-card",
+          "published": "Mon, 25 Sep 2023 07:00:00 GMT",
+          "summary": ""
+        },
+        {
+          "title": "Confidence-Building Measures for Artificial Intelligence: Workshop proceedings",
+          "link": "https://openai.com/research/confidence-building-measures-for-artificial-intelligence",
+          "published": "Tue, 01 Aug 2023 07:00:00 GMT",
+          "summary": ""
+        },
+        {
+          "title": "Frontier AI regulation: Managing emerging risks to public safety",
+          "link": "https://openai.com/research/frontier-ai-regulation",
+          "published": "Thu, 06 Jul 2023 07:00:00 GMT",
+          "summary": ""
+        },
+        {
+          "title": "Improving mathematical reasoning with process supervision",
+          "link": "https://openai.com/research/improving-mathematical-reasoning-with-process-supervision",
+          "published": "Wed, 31 May 2023 07:00:00 GMT",
+          "summary": "We've trained a model to achieve a new state-of-the-art in mathematical problem solving by rewarding each correct step of reasoning (\u201cprocess supervision\u201d) instead of simply rewarding the correct final answer (\u201coutcome supervision\u201d). In addition to boosting performance relative to outcome supervision, process supervision also has an important alignment benefit: it directly trains the model to produce a chain-of-thought that is endorsed by humans."
+        },
+        {
+          "title": "Language models can explain neurons in language models",
+          "link": "https://openai.com/research/language-models-can-explain-neurons-in-language-models",
+          "published": "Tue, 09 May 2023 07:00:00 GMT",
+          "summary": "We use GPT-4 to automatically write explanations for the behavior of neurons in large language models and to score those explanations. We release a dataset of these (imperfect) explanations and scores for every neuron in GPT-2."
+        },
+        {
+          "title": "GPTs are GPTs: An early look at the labor market impact potential of large language models",
+          "link": "https://openai.com/research/gpts-are-gpts",
+          "published": "Fri, 17 Mar 2023 07:00:00 GMT",
+          "summary": ""
+        },
+        {
+          "title": "GPT-4",
+          "link": "https://openai.com/research/gpt-4",
+          "published": "Tue, 14 Mar 2023 07:00:00 GMT",
+          "summary": "We\u2019ve created GPT-4, the latest milestone in OpenAI\u2019s effort in scaling up deep learning. GPT-4 is a large multimodal model (accepting image and text inputs, emitting text outputs) that, while less capable than humans in many real-world scenarios, exhibits human-level performance on various professional and academic benchmarks."
+        },
+        {
+          "title": "Forecasting potential misuses of language models for disinformation campaigns and how to reduce risk",
+          "link": "https://openai.com/research/forecasting-misuse",
+          "published": "Wed, 11 Jan 2023 08:00:00 GMT",
+          "summary": "OpenAI researchers collaborated with Georgetown University\u2019s Center for Security and Emerging Technology and the Stanford Internet Observatory to investigate how large language models might be misused for disinformation purposes. The collaboration included an October 2021 workshop bringing together 30 disinformation researchers, machine learning experts, and policy analysts, and culminated in a co-authored report building on more than a year of research. This report outlines the threats that language models pose to the information environment if used to augment disinformation campaigns and introduces a framework for analyzing potential mitigations. Read the full report\u00a0here."
+        },
+        {
+          "title": "Point-E: A system for generating 3D point clouds from complex prompts",
+          "link": "https://openai.com/research/point-e",
+          "published": "Fri, 16 Dec 2022 08:00:00 GMT",
+          "summary": ""
+        },
+        {
+          "title": "Scaling laws for reward model overoptimization",
+          "link": "https://openai.com/research/scaling-laws-for-reward-model-overoptimization",
+          "published": "Wed, 19 Oct 2022 07:00:00 GMT",
+          "summary": ""
+        },
+        {
+          "title": "Introducing Whisper",
+          "link": "https://openai.com/research/whisper",
+          "published": "Wed, 21 Sep 2022 07:00:00 GMT",
+          "summary": "We\u2019ve trained and are open-sourcing a neural net called Whisper that approaches human level robustness and accuracy on English speech\u00a0recognition."
+        },
+        {
+          "title": "Efficient training of language models to fill in the middle",
+          "link": "https://openai.com/research/efficient-training-of-language-models-to-fill-in-the-middle",
+          "published": "Thu, 28 Jul 2022 07:00:00 GMT",
+          "summary": ""
+        },
+        {
+          "title": "A hazard analysis framework for code synthesis large language models",
+          "link": "https://openai.com/research/a-hazard-analysis-framework-for-code-synthesis-large-language-models",
+          "published": "Mon, 25 Jul 2022 07:00:00 GMT",
+          "summary": ""
+        },
+        {
+          "title": "DALL\u00b7E 2 pre-training mitigations",
+          "link": "https://openai.com/research/dall-e-2-pre-training-mitigations",
+          "published": "Tue, 28 Jun 2022 07:00:00 GMT",
+          "summary": "In order to share the magic of\u00a0DALL\u00b7E 2\u00a0with a broad audience, we needed to reduce the risks associated with powerful image generation models. To this end, we put various\u00a0guardrails\u00a0in place to prevent generated images from violating our\u00a0content policy."
+        },
+        {
+          "title": "Learning to play Minecraft with Video PreTraining",
+          "link": "https://openai.com/research/vpt",
+          "published": "Thu, 23 Jun 2022 07:00:00 GMT",
+          "summary": "We trained a neural network to play Minecraft by Video PreTraining (VPT) on a massive unlabeled video dataset of human Minecraft play, while using only a small amount of labeled contractor data. With fine-tuning, our model can learn to craft diamond tools, a task that usually takes proficient humans over 20 minutes (24,000 actions). Our model uses the native human interface of keypresses and mouse movements, making it quite general, and represents a step towards general computer-using\u00a0agents."
+        }
+      ],
+      "https://jack-clark.net/feed/": [
+        {
+          "title": "What does 10^25 versus 10^26 mean?",
+          "link": "https://jack-clark.net/2024/03/28/what-does-1025-versus-1026-mean/",
+          "published": "Thu, 28 Mar 2024 16:04:13 +0000",
+          "summary": "A brief look at what FLOPs-based regulation nets out to\u00ac\u2020 Recent AI regulations have defined the trigger points for oversight in terms of the amount of floating point operations dumped into training an AI system. If you\u201a\u00c4\u00f4re in America and you\u201a\u00c4\u00f4ve trained a model with 10^26 FLOPs, you\u201a\u00c4\u00f4re going to spend a lot of time [&#8230;]"
+        },
+        {
+          "title": "Import AI 366: 500bn text tokens; Facebook vs Princeton; why small government types hate the Biden EO",
+          "link": "https://jack-clark.net/2024/03/25/import-ai-366-500bn-text-tokens-facebook-vs-princeton-why-small-government-types-hate-the-biden-eo/",
+          "published": "Mon, 25 Mar 2024 04:49:00 +0000",
+          "summary": "Import AI publishes first on Substack \u201a\u00c4\u00ec\u00ac\u2020subscribe here. DROID &#8211; another huge robot dataset drops:\u201a\u00c4\u00b6More and more data means more and more invention\u201a\u00c4\u00b6A consortium of researchers have released the Distributed Robot Interaction Dataset (DROID), a giant dataset of an industrial robot carrying out various tasks in various settings. Datasets like DROID are meant to help [&#8230;]"
+        },
+        {
+          "title": "Import AI 365: WMD benchmark; Amazon sees $1bn training runs; DeepMind gets closer to its game-playing dream",
+          "link": "https://jack-clark.net/2024/03/18/import-ai-365-wmd-benchmark-amazon-sees-1bn-training-runs-deepmind-gets-closer-to-its-game-playing-dream/",
+          "published": "Mon, 18 Mar 2024 16:48:00 +0000",
+          "summary": "Import AI publishes first on Substack \u201a\u00c4\u00ec\u00ac\u2020subscribe here. Anti-doomer DC nonprofit launches:\u201a\u00c4\u00b6The counterreaction to overreach on safety\u201a\u00c4\u00b6Some technologists have launched Alliance for the Future (AFTF), a DC-based nonprofit organization meant to fight AI safety forces linked to regulatory capture and perceived overreach. \u201a\u00c4\u00faAFTF works to inform the media, lawmakers, and other interested parties about the [&#8230;]"
+        },
+        {
+          "title": "Import AI 364: Robot scaling laws; human-level LLM forecasting; and Claude 3",
+          "link": "https://jack-clark.net/2024/03/11/import-ai-364-robot-scaling-laws-human-level-llm-forecasting-and-claude-3/",
+          "published": "Mon, 11 Mar 2024 16:46:00 +0000",
+          "summary": "Import AI publishes first on Substack \u201a\u00c4\u00ec\u00ac\u2020subscribe here. Scaling laws are coming for real world robots as well:\u201a\u00c4\u00b6Which means robots are about to get really, really good, really, really quickly\u201a\u00c4\u00b6&#160;UC Berkeley researchers have trained a robotic control system that can easily transfer to the real world and have used it to help a bipedal robot [&#8230;]"
+        },
+        {
+          "title": "Import AI 363: ByteDance\u2019s 10k GPU training run; PPO vs REINFORCE; and generative everything",
+          "link": "https://jack-clark.net/2024/03/04/import-ai-363-bytedances-10k-gpu-training-run-ppo-vs-reinforce-and-generative-everything/",
+          "published": "Mon, 04 Mar 2024 16:45:00 +0000",
+          "summary": "Import AI publishes first on Substack \u201a\u00c4\u00ec\u00ac\u2020subscribe here. Turn still photos into video games with Genie:\u201a\u00c4\u00b6DeepMind figures out how to turn anything in reality into a controllable game\u201a\u00c4\u00b6Google DeepMind has built Genie, a generative model that can create interactive worlds. Genie is a very interesting system, fusing ideas from large-scale generative models with DeepMind\u201a\u00c4\u00f4s roots [&#8230;]"
+        },
+        {
+          "title": "Import AI 362: Amazon\u2019s big speech model; fractal hyperparameters; and Google\u2019s open models",
+          "link": "https://jack-clark.net/2024/02/26/import-ai-362-amazons-big-speech-model-fractal-hyperparameters-and-googles-open-models/",
+          "published": "Mon, 26 Feb 2024 16:43:39 +0000",
+          "summary": "Import AI publishes first on Substack \u201a\u00c4\u00ec\u00ac\u2020subscribe here. Amazon trains a big text-to-speech model via its \u201a\u00c4\u00f2Amazon AGI\u201a\u00c4\u00f4 research team:\u201a\u00c4\u00b6No surprises here: Scaling laws work for TTS systems as well\u201a\u00c4\u00b6Amazon has built a large text-to-speech model family on 100k hours of public domain speech data. The model, Big Adaptive Streamable TTS with Emergent abilities (BASE), [&#8230;]"
+        },
+        {
+          "title": "Import AI 361: GPT-4 hacking; theory of minds in LLMs; and scaling MoEs + RL",
+          "link": "https://jack-clark.net/2024/02/19/import-ai-361-gpt-4-hacking-theory-of-minds-in-llms-and-scaling-moes-rl/",
+          "published": "Mon, 19 Feb 2024 16:42:00 +0000",
+          "summary": "Import AI publishes first on Substack \u201a\u00c4\u00ec\u00ac\u2020subscribe here. DeepMind figures out how to use MoEs to scale-up RL:\u201a\u00c4\u00b6Maybe scaling laws are coming for RL as well\u201a\u00c4\u00b6Researchers with Google DeepMind, Mila, Universite de Montreal, University of Oxford, and McGill University have figured out how to integrate Mixture-of-Expert models with RL agents. This might make RL agents [&#8230;]"
+        },
+        {
+          "title": "Import AI 360: Guessing emotions; drone targeting dataset; frameworks for AI alignment",
+          "link": "https://jack-clark.net/2024/02/12/import-ai-360-guessing-emotions-drone-targeting-dataset-frameworks-for-ai-alignment/",
+          "published": "Mon, 12 Feb 2024 16:40:00 +0000",
+          "summary": "Import AI publishes first on Substack \u201a\u00c4\u00ec\u00ac\u2020subscribe here. Teaching machines to guess at our own emotions with FindingEmo:\u201a\u00c4\u00b6~25,000 images to help machines figure out how we\u201a\u00c4\u00f4re feeling about stuff\u201a\u00c4\u00b6Researchers with KU Leuven have built and released FindingEmo, a dataset for teaching AI systems to classify the emotions of people in complicated photos. FindingEmo consists of [&#8230;]"
+        },
+        {
+          "title": "Import AI 359: $1 billion gov supercomputer; Apple\u201a\u00c4\u00f4s good synthetic data technique; and a thousand-year old data library",
+          "link": "https://jack-clark.net/2024/02/05/import-ai-359-1-billion-gov-supercomputer-apples-good-synthetic-data-technique-and-a-thousand-year-old-data-library/",
+          "published": "Mon, 05 Feb 2024 16:39:00 +0000",
+          "summary": "Import AI publishes first on Substack \u201a\u00c4\u00ec\u00ac\u2020subscribe here. Google uses Gemini-powered fuzzer to save hundreds of hours of bug fixing:\u201a\u00c4\u00b6A nice study of how targeted LLM applications can speed up organizations\u201a\u00c4\u00b6Google has recently started using language models to help it find and spot bugs in its C/C++, Java, and Go code. The results have been [&#8230;]"
+        },
+        {
+          "title": "Import AI 358: The US Government\u201a\u00c4\u00f4s biggest AI training run; hacking LLMs by hacking GPUs; chickens versus transformers",
+          "link": "https://jack-clark.net/2024/01/29/import-ai-358-the-us-governments-biggest-ai-training-run-hacking-llms-by-hacking-gpus-chickens-versus-transformers/",
+          "published": "Mon, 29 Jan 2024 16:38:00 +0000",
+          "summary": "Import AI publishes first on Substack \u201a\u00c4\u00ec\u00ac\u2020subscribe here. Hackers can read your LLM outputs:\u201a\u00c4\u00b6Trail of Bits study identifies some GPU vulnerabilities\u201a\u00c4\u00b6Security firm Trail of Bits has looked at how secure LLM sessions running on GPUs are and found that for some GPUs it\u201a\u00c4\u00f4s possible for a hacker to be able to read the outputs of [&#8230;]"
+        }
+      ]
+    }
+  },
+  "Software Development": {
+    "feeds": [
+      {
+        "url": "https://news.ycombinator.com/rss"
+      }
+    ],
+    "entries": {
+      "https://news.ycombinator.com/rss": [
+        {
+          "title": "Embezzlers Are Nice People (2017)",
+          "link": "https://www.stimmel-law.com/en/articles/story-1-embezzlers-are-nice-people",
+          "published": "Mon, 15 Apr 2024 16:24:51 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40042616\">Comments</a>"
+        },
+        {
+          "title": "Building a GPS receiver",
+          "link": "https://axleos.com/building-a-gps-receiver-part-1-hearing-whispers/",
+          "published": "Mon, 15 Apr 2024 14:42:10 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40041198\">Comments</a>"
+        },
+        {
+          "title": "Web-Based Turbo Pascal Compiler",
+          "link": "https://github.com/lkesteloot/turbopascal",
+          "published": "Mon, 15 Apr 2024 16:15:39 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40042497\">Comments</a>"
+        },
+        {
+          "title": "A tiny ultrabright laser that can melt steel",
+          "link": "https://spectrum.ieee.org/pcsel",
+          "published": "Mon, 15 Apr 2024 09:02:49 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40038251\">Comments</a>"
+        },
+        {
+          "title": "ScanAllFish",
+          "link": "https://www.adamsummers.org/scanallfish",
+          "published": "Sat, 13 Apr 2024 08:23:01 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40021458\">Comments</a>"
+        },
+        {
+          "title": "An FDA approved device offers a new treatment for tinnitus",
+          "link": "https://www.npr.org/sections/health-shots/2024/04/15/1244501055/tinnitus-hearing-loss-ringing-ear-noise",
+          "published": "Mon, 15 Apr 2024 14:58:41 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40041430\">Comments</a>"
+        },
+        {
+          "title": "An open-source implementation of Apple code signing and notarization (2022)",
+          "link": "https://gregoryszorc.com/blog/2022/08/08/achieving-a-completely-open-source-implementation-of-apple-code-signing-and-notarization/",
+          "published": "Mon, 15 Apr 2024 15:36:54 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40041976\">Comments</a>"
+        },
+        {
+          "title": "Beautifying Org Mode in Emacs (2018)",
+          "link": "https://zzamboni.org/post/beautifying-org-mode-in-emacs/",
+          "published": "Mon, 15 Apr 2024 07:32:28 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40037844\">Comments</a>"
+        },
+        {
+          "title": "Learning from snapshots of lost fossils",
+          "link": "https://www.sapiens.org/archaeology/human-teeth-ksar-akil/",
+          "published": "Sat, 13 Apr 2024 22:37:32 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40026817\">Comments</a>"
+        },
+        {
+          "title": "A shrub in Nepal supplies the raw material for the bank notes used in Japan",
+          "link": "https://www.nytimes.com/2024/04/15/world/asia/nepal-japan-yen-argeli.html",
+          "published": "Mon, 15 Apr 2024 05:45:02 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40037396\">Comments</a>"
+        },
+        {
+          "title": "Histomap: Visualizing the 4000 Year History of Global Power",
+          "link": "https://www.visualcapitalist.com/wp-content/uploads/2017/11/histomap-big.html",
+          "published": "Mon, 15 Apr 2024 19:05:36 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40044464\">Comments</a>"
+        },
+        {
+          "title": "PicoGK is a compact and robust geometry kernel for computational engineering",
+          "link": "https://github.com/leap71/PicoGK",
+          "published": "Sun, 14 Apr 2024 21:17:34 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40034563\">Comments</a>"
+        },
+        {
+          "title": "Ask HN: I want to create IMDB for open source projects",
+          "link": "https://news.ycombinator.com/item?id=40041954",
+          "published": "Mon, 15 Apr 2024 15:35:30 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40041954\">Comments</a>"
+        },
+        {
+          "title": "Cycloidal marine propellers: Efficient thrust in any direction",
+          "link": "https://newatlas.com/marine/abb-dynafin-marine-propulsion/",
+          "published": "Mon, 15 Apr 2024 15:38:34 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40042007\">Comments</a>"
+        },
+        {
+          "title": "Asking BigTech to police AI is like asking oil companies to solve climate change",
+          "link": "https://fortune.com/2024/04/15/openai-google-microsoft-responsobile-societal-questions-government-responsibility/",
+          "published": "Mon, 15 Apr 2024 18:37:24 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40044119\">Comments</a>"
+        },
+        {
+          "title": "Smishing scam regarding debt for road toll services",
+          "link": "https://www.ic3.gov/Media/Y2024/PSA240412",
+          "published": "Mon, 15 Apr 2024 14:04:28 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40040694\">Comments</a>"
+        },
+        {
+          "title": "Recall.ai (YC W20) is hiring engineer #4 (Rust and large scale infra)",
+          "link": "https://www.workatastartup.com/jobs/63615",
+          "published": "Mon, 15 Apr 2024 12:00:48 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40039372\">Comments</a>"
+        },
+        {
+          "title": "Better adb shell",
+          "link": "https://github.com/matan-h/adb-shell",
+          "published": "Mon, 15 Apr 2024 07:16:13 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40037772\">Comments</a>"
+        },
+        {
+          "title": "Visualizing Attention, a Transformer's Heart [video]",
+          "link": "https://www.3blue1brown.com/lessons/attention",
+          "published": "Sun, 14 Apr 2024 23:38:01 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40035514\">Comments</a>"
+        },
+        {
+          "title": "Control Linux based distros using hand gestures using OpenCV, GTK, Mediapipe",
+          "link": "https://github.com/flying-pizza-69/GestureX",
+          "published": "Mon, 15 Apr 2024 06:39:36 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40037619\">Comments</a>"
+        },
+        {
+          "title": "Canoes discovered northwest of Rome are oldest boats ever found in Mediterranean",
+          "link": "https://www.smithsonianmag.com/smart-news/five-canoes-discovered-northwest-of-rome-are-oldest-boats-ever-found-in-the-mediterranean-180984014/",
+          "published": "Sun, 14 Apr 2024 10:29:19 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40030127\">Comments</a>"
+        },
+        {
+          "title": "Zooming User Interface (ZUI)",
+          "link": "https://en.wikipedia.org/wiki/Zooming_user_interface",
+          "published": "Mon, 15 Apr 2024 11:33:45 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40039143\">Comments</a>"
+        },
+        {
+          "title": "A proof-of-concept Python executable built on Cosmopolitan Libc (2022)",
+          "link": "https://ahgamut.github.io/2021/07/13/ape-python/",
+          "published": "Mon, 15 Apr 2024 11:17:44 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40039020\">Comments</a>"
+        },
+        {
+          "title": "WizardLM 2",
+          "link": "https://wizardlm.github.io/WizardLM2/",
+          "published": "Mon, 15 Apr 2024 15:54:33 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40042225\">Comments</a>"
+        },
+        {
+          "title": "XZ Utils Review Notes",
+          "link": "https://tukaani.org/xz-backdoor/review.html",
+          "published": "Mon, 15 Apr 2024 18:49:43 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40044243\">Comments</a>"
+        },
+        {
+          "title": "From L3 to seL4: 20 years of L4 microkernels (2013) [video]",
+          "link": "https://www.youtube.com/watch?v=RdoaFc5-1Rk",
+          "published": "Mon, 15 Apr 2024 05:27:39 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40037330\">Comments</a>"
+        },
+        {
+          "title": "We are moving to General Availability",
+          "link": "https://supabase.com/ga",
+          "published": "Mon, 15 Apr 2024 11:39:30 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40039191\">Comments</a>"
+        },
+        {
+          "title": "Asymmetric Routing Around the Firewall",
+          "link": "https://devnonsense.com/posts/asymmetric-routing-around-the-firewall/",
+          "published": "Thu, 11 Apr 2024 21:42:12 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40007120\">Comments</a>"
+        },
+        {
+          "title": "Procrastination can be caused by anxiety",
+          "link": "https://solvingprocrastination.com/anxiety/",
+          "published": "Mon, 15 Apr 2024 15:14:45 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40041667\">Comments</a>"
+        },
+        {
+          "title": "The hero tax: Why 'selfless' workers are professionally exploited",
+          "link": "https://www.bbc.com/worklife/article/20240409-heroic-jobs-earn-less-money",
+          "published": "Mon, 15 Apr 2024 12:02:53 +0000",
+          "summary": "<a href=\"https://news.ycombinator.com/item?id=40039391\">Comments</a>"
+        }
+      ]
+    }
+  }
+}
