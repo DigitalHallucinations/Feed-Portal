@@ -54,6 +54,7 @@ class RSSFeedReaderUI:
         self.load_settings()
         self.url_cooldown = False 
         self.create_widgets()
+        self.master.protocol("WM_DELETE_WINDOW", self.on_close)
 
     def open_url(self, url):
         logger.info("Opening url...")
@@ -503,3 +504,7 @@ class RSSFeedReaderUI:
             menu.add_command(label="Copy", command=lambda: self.copy_selection(event))
             menu.post(event.x_root, event.y_root)
 
+    def on_close(self):
+       self.save_feeds()
+       logger.info("RSS Feed Reader closed.")
+       self.master.quit()
