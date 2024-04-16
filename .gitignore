@@ -1,2 +1,5 @@
 # Ignore all .log files
 *.log
+
+# Ignore feed files
+*.json
