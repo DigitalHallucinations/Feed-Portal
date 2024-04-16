@@ -1,5 +1,3 @@
-# modules/Tools/Intenet_Tools/RSS/rss_feed_reader.py
-
 import feedparser
 import chardet
 import requests

@@ -1,6 +1,6 @@
 # RSS Feed Reader
 
-The RSS Feed Reader is a module within the SCOUT (Scalable Cognitive Operations Unified Team) application that allows users to retrieve and process RSS feeds. It provides functionality to add and manage feeds, retrieve feed entries, and extract relevant information from those entries. This module is particularly useful for staying up-to-date with news, blogs, podcasts, or any other content distributed via RSS feeds.
+The RSS Feed Reader is a module that allows users to retrieve and process RSS feeds. It provides functionality to add and manage feeds, retrieve feed entries, and extract relevant information from those entries. This module is particularly useful for staying up-to-date with news, blogs, podcasts, or any other content distributed via RSS feeds.
 
 ## Features
 
@@ -12,15 +12,15 @@ The RSS Feed Reader is a module within the SCOUT (Scalable Cognitive Operations 
 
 4. **Entry Details**: The module allows users to retrieve detailed information for each entry within a feed. It extracts the title, link, publication date, and summary of individual entries, providing a comprehensive view of the content.
 
-5. **Logging**: The RSS Feed Reader incorporates a logging mechanism to track and record various events and errors during the feed retrieval and processing. The logs are stored in a file named `SCOUT.log` and can be valuable for debugging and monitoring purposes.
+5. **Logging**: The RSS Feed Reader incorporates a logging mechanism to track and record various events and errors during the feed retrieval and processing. The logs are stored in a file named `RSS.log` and can be valuable for debugging and monitoring purposes.
 
 ## Usage
 
-To utilize the RSS Feed Reader module within SCOUT, follow these steps:
+To utilize the RSS Feed Reader module, follow these steps:
 
 1. Ensure that the necessary dependencies are installed, particularly the `feedparser` library, which is used for parsing RSS feeds.
 
-2. Import the `RSSFeedReader` class from the `rss_feed_reader` module in your SCOUT application.
+2. Import the `RSSFeedReader` class from the `rss_feed_reader` module in your application.
 
 3. Create an instance of the `RSSFeedReader` class:
    ```python
@@ -82,19 +82,19 @@ Make sure to install the `feedparser` library before using the RSS Feed Reader m
 
 If you encounter any issues while using the RSS Feed Reader module, consider the following:
 
-- Check the `SCOUT.log` file for any error messages or exceptions that occurred during the feed retrieval and processing.
+- Check the `RSS.log` file for any error messages or exceptions that occurred during the feed retrieval and processing.
 - Ensure that you have a stable internet connection to retrieve RSS feeds.
 - Verify that the provided feed URLs are valid and accessible.
-- Make sure you have the `feedparser` library installed and properly imported in your SCOUT application.
+- Make sure you have the `feedparser` library installed and properly imported in your application.
 
-For further assistance or to report any bugs, please contact the SCOUT development team.
+For further assistance or to report any bugs, please refer to the project's issue tracker or contact the development team.
 
 ## Example
 
-Here's an example of how to use the RSS Feed Reader module within SCOUT:
+Here's an example of how to use the RSS Feed Reader module:
 
 ```python
-from modules.Tools.Internet_Tools.rss_feed_reader import RSSFeedReader
+from rss_feed_reader import RSSFeedReader
 
 # Create an instance of the RSSFeedReader
 reader = RSSFeedReader()
