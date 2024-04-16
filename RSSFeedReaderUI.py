@@ -44,9 +44,11 @@ def adjust_logging_level(level):
 
 class RSSFeedReaderUI:
     def __init__(self, master):
+        logger.info("Initializing RSS Feed Reader...")
         self.master = master
         self.master.title("RSS Feed Reader")
         self.rss_feed_reader = RSSFeedReader()
+        logger.info("Loading feeds and configuration...")
         self.load_feeds()
         self.load_config()
         self.load_settings()
@@ -54,6 +56,7 @@ class RSSFeedReaderUI:
         self.create_widgets()
 
     def open_url(self, url):
+        logger.info("Opening url...")
         if not self.url_cooldown:
             self.url_cooldown = True
             threading.Thread(target=self.open_url_thread, args=(url,)).start()
@@ -114,6 +117,8 @@ class RSSFeedReaderUI:
         save_button = tk.Button(settings_window, text="Save", command=lambda: self.save_settings(entries_var.get(), refresh_var.get(), format_var.get()), bg=self.button_bg, fg=self.font_color, font=font_style)
         save_button.grid(row=3, column=0, columnspan=2, padx=5, pady=5)
     
+        logger.info("Settings opened...")
+
     def save_settings(self, entries_per_feed, refresh_interval_mins, display_format):
         config = configparser.ConfigParser()
         config.read("config.ini")
@@ -129,11 +134,14 @@ class RSSFeedReaderUI:
         self.refresh_interval_mins = refresh_interval_mins
         self.display_format = display_format
 
+        logger.info("Settings Saved...")
         self.refresh_feeds()
  
     def load_config(self):
+        logger.info("Loading configuration from config.ini...")
         try:
-            config_path = os.path.join("C:\\", "SCOUT-2", "config.ini")
+            script_dir = os.path.dirname(os.path.abspath(__file__)) 
+            config_path = os.path.join(script_dir, "config.ini")  
             config = configparser.ConfigParser()
             config.read(config_path)
 
@@ -164,6 +172,7 @@ class RSSFeedReaderUI:
             messagebox.showerror("Configuration Error", "Failed to load configuration. Using default values.")
         
     def create_widgets(self):
+        logger.info("Creating UI widgets...")
         try:
             font_style = (self.font_family, int(self.font_size * 10))
             self.master.configure(bg=self.window_bg)
@@ -303,6 +312,7 @@ class RSSFeedReaderUI:
             messagebox.showerror("Error", "Please select a feed to start.")
         
     def add_feed(self):
+        logger.info("Adding a new feed...")
         try:
             feed_url = self.feed_url_entry.get()
             category = self.category_entry.get()
@@ -344,6 +354,7 @@ class RSSFeedReaderUI:
             messagebox.showerror("Error", "An unexpected error occurred.")
 
     def refresh_feeds(self):
+        logger.info("Refreshing feeds...")
         try:
             self.feeds_listbox.delete(0, tk.END)
             self.entries_listbox.delete(0, tk.END)
@@ -359,25 +370,24 @@ class RSSFeedReaderUI:
             messagebox.showerror("Error", "An error occurred while refreshing feeds.")
 
     def load_feeds(self):
+        logger.info("Loading feeds...")
         try:
-            # Get the directory of the current script
             script_dir = os.path.dirname(os.path.abspath(__file__)) 
-            
-            # Construct the path to feeds.json
+
             config_path = os.path.join(script_dir, "feeds.json") 
 
             if os.path.exists(config_path):
                 with open(config_path, "r") as file:
                     feed_data = json.load(file)
-                    self.loaded_entries = {}  # Dictionary to store loaded entries
+                    self.loaded_entries = {}  
                     for category, data in feed_data.items():
                         for feed in data["feeds"]:
                             self.rss_feed_reader.add_feed(feed["url"], category)
                             entries = data["entries"].get(feed["url"], [])
-                            self.loaded_entries[feed["url"]] = []  # Initialize an empty list for each feed URL
+                            self.loaded_entries[feed["url"]] = []  
                             for entry_details in entries:
                                 entry = feedparser.FeedParserDict(entry_details)
-                                self.loaded_entries[feed["url"]].append(entry)  # Store the entry in the loaded_entries dictionary
+                                self.loaded_entries[feed["url"]].append(entry)  
         except Exception as e:
             logger.exception("Error occurred while loading feeds.")
         
@@ -431,6 +441,7 @@ class RSSFeedReaderUI:
             messagebox.showerror("Error", "An unexpected error occurred.")
 
     def save_feeds(self):
+        logger.info("Saving feeds...")
         try:
             feeds = self.rss_feed_reader.get_feeds()
             feed_data = {}
@@ -452,10 +463,8 @@ class RSSFeedReaderUI:
                     except RSSFeedReaderError as e:
                         logger.warning(f"Skipping entry due to missing details: {str(e)}")
             
-            # Get the directory of the current script (same as in load_feeds)
             script_dir = os.path.dirname(os.path.abspath(__file__)) 
             
-            # Construct the path to feeds.json
             config_path = os.path.join(script_dir, "feeds.json")
             with open(config_path, "w") as file:
                 json.dump(feed_data, file, indent=2)
@@ -493,7 +502,3 @@ class RSSFeedReaderUI:
             menu.add_command(label="Copy", command=lambda: self.copy_selection(event))
             menu.post(event.x_root, event.y_root)
 
-if __name__ == "__main__":
-    root = tk.Tk()
-    app = RSSFeedReaderUI(root)
-    root.mainloop()
