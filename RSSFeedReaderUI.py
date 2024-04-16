@@ -130,7 +130,7 @@ class RSSFeedReaderUI:
         self.display_format = display_format
 
         self.refresh_feeds()
-
+ 
     def load_config(self):
         try:
             config_path = os.path.join("C:\\", "SCOUT-2", "config.ini")
