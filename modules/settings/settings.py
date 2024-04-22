@@ -11,9 +11,8 @@ logger = setup_logger('settings')
 def load_settings(self):
     """Loads settings from the config.ini file."""
     logger.info("Loading settings from config.ini...")
-    settings_folder = "settings"
+    settings_folder = os.path.join("modules", "settings")
     config_path = os.path.join(settings_folder, "config.ini")
-
     config = configparser.ConfigParser()
     config.read(config_path)
 

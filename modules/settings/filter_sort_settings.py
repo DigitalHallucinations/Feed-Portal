@@ -10,8 +10,8 @@ from modules.logging.logger import setup_logger
 
 logger = setup_logger('filter_sort_settings')
 
-def load_filter_sort_settings(self):
-    settings_folder = "settings"
+def load_filter_sort_settings(self): 
+    settings_folder = os.path.join("modules", "settings")
     filters_path = os.path.join(settings_folder, "filters.json")
     sorting_path = os.path.join(settings_folder, "sorting.json")
 
@@ -123,7 +123,7 @@ def setup_filter_settings_ui(self, window, font_family, font_size, font_color, w
     layout.addWidget(save_button)
 
 def save_filter_sort_settings(self):
-    settings_folder = "settings"
+    settings_folder = os.path.join("modules", "settings")
     filters_path = os.path.join(settings_folder, "filters.json")
     sorting_path = os.path.join(settings_folder, "sorting.json")
 
