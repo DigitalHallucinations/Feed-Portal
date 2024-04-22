@@ -3,36 +3,10 @@
 import feedparser
 import chardet
 import requests
-import logging
-from logging.handlers import RotatingFileHandler
 from urllib.parse import urlparse
+from modules.logging.logger import setup_logger
 
-logger = logging.getLogger('rss_feed_reader.py')
-
-log_filename = 'RSS.log'
-log_max_size = 10 * 1024 * 1024  # 10 MB
-log_backup_count = 5
-
-rotating_handler = RotatingFileHandler(log_filename, maxBytes=log_max_size, backupCount=log_backup_count, encoding='utf-8')
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-rotating_handler.setFormatter(formatter)
-
-stream_handler = logging.StreamHandler()
-stream_handler.setFormatter(formatter)
-
-logger.addHandler(rotating_handler)
-logger.addHandler(stream_handler)
-logger.setLevel(logging.INFO)
-
-def adjust_logging_level(level):
-    levels = {
-        'DEBUG': logging.DEBUG,
-        'INFO': logging.INFO,
-        'WARNING': logging.WARNING,
-        'ERROR': logging.ERROR,
-        'CRITICAL': logging.CRITICAL
-    }
-    logger.setLevel(levels.get(level, logging.WARNING))
+logger = setup_logger('rss_feed_reader')
 
 class RSSFeedReaderError(Exception):
     pass
@@ -127,13 +101,10 @@ class RSSFeedReader:
         try:
             response = requests.get(feed_url)
             
-            # Detect the encoding using chardet
             encoding = chardet.detect(response.content)['encoding']
             
-            # Decode the content using the detected encoding
             content = response.content.decode(encoding)
-            
-            # Parse the decoded content with feedparser
+
             feed = feedparser.parse(content)
             
             if feed.bozo:
@@ -164,3 +135,30 @@ class RSSFeedReader:
         except Exception as e:
             logger.exception(f"Error occurred while retrieving entry details: {str(e)}")
             raise RSSFeedReaderError(f"Failed to retrieve details for entry. An unexpected error occurred.")
+        
+    def get_categories(self):
+        logger.info("Retrieving categories from RSS feeds")
+        try:
+            categories = set()
+            for feed in self.feeds:
+                if feed.category:
+                    categories.add(feed.category)
+            logger.info(f"Retrieved {len(categories)} categories from RSS feeds")
+            return list(categories)
+        except Exception as e:
+            logger.exception(f"Error occurred while retrieving categories: {str(e)}")
+            raise RSSFeedReaderError(f"Failed to retrieve categories. An unexpected error occurred.")   
+        
+    def sort_entries(self, entries, sorting):
+        logger.info(f"Sorting entries based on {sorting['method']} in {sorting['order']} order")
+        try:
+            if sorting['method'] == 'date':
+                entries.sort(key=lambda entry: getattr(entry, 'published_parsed', ''), reverse=(sorting['order'] == 'descending'))
+            elif sorting['method'] == 'title':
+                entries.sort(key=lambda entry: getattr(entry, 'title', ''), reverse=(sorting['order'] == 'descending'))
+            logger.info("Entries sorted successfully")
+            return entries
+        except Exception as e:
+            logger.exception(f"Error occurred while sorting entries: {str(e)}")
+            raise RSSFeedReaderError(f"Failed to sort entries. An unexpected error occurred.")
+    
