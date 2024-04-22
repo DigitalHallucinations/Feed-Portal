@@ -21,6 +21,27 @@ def load_settings(self):
     self.refresh_interval_mins = config.getint("FeedSettings", "refresh_interval_mins", fallback=30)
     self.display_format = config.get("FeedSettings", "display_format", fallback="Simple List")
 
+def load_config(self):
+    logger.info("Loading configuration from config.ini...")
+    try:
+        settings_folder = os.path.join("modules", "settings")
+        config_path = os.path.join(settings_folder, "config.ini")
+        config = configparser.ConfigParser()
+        config.read(config_path)
+
+        self.font_family = config.get("Font", "family", fallback="MS Sans Serif")
+        self.font_size = config.getfloat("Font", "size", fallback=1.1)
+        self.font_color = config.get("Font", "color", fallback="#ffffff")
+
+        self.main_window_color = config.get("Colors", "main_window_color", fallback="#333333")
+        self.window_bg = config.get("Colors", "window_bg", fallback="#000000")
+        self.spinbox_bg = config.get("Colors", "spinbox_bg", fallback="#808080")
+        self.button_bg = config.get("Colors", "button_bg", fallback="#696969")
+
+    except Exception as e:
+        logger.exception("Error occurred while loading configuration.")
+        qtw.QMessageBox.critical(self, "Configuration Error", "Failed to load configuration. Using default values.")
+
 def open_settings(self):
     """Opens a new window for adjusting settings."""
     logger.info("Opening settings window...")

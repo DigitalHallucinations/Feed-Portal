@@ -28,7 +28,7 @@ class RSSFeedReaderUI(qtw.QMainWindow):
         logger.info("Loading feeds and configuration...")
         self.load_feeds()
         self.load_config()
-        settings.load_settings(self)
+        settings.load_settings(self)  
         filter_sort_settings.load_filter_sort_settings(self)
         self.url_cooldown = False
 
